@@ -77,7 +77,7 @@ This stage shows how Datadog monitoring was set up to enable real-time tracking 
 You can watch the video here [Datadog System Monitoring](https://youtu.be/RUPv7jKEkZg)
 
 ## Errors and Troubleshooting
-1. During the initial VPC configuration, only port 22 was added as the inbound rule on both nacls and security groups instead of allowing additional required inbound traffic. I   encountered issues when attempting to update and upgrade packages using sudo apt update and sudo apt upgrade. This restrictive rule caused connectivity limitations when further configuration steps required access on other ports, including the updated SSH port. To troubleshoot, the inbound rules were reviewed and updated to include the necessary ports rather than relying solely on port 22. Additional rules were added to permit required traffic, after which connectivity and the update/upgrade commands ran successfully, allowing the servers to install the latest packages and security patches.
+1. During the initial VPC configuration, only port 22 was added as the inbound rule on nacls instead of allowing additional required inbound traffic. I encountered issues when attempting to update and upgrade packages using sudo apt update and sudo apt upgrade. This restrictive rule caused connectivity limitations when further configuration steps required access on other ports, including the updated SSH port. To troubleshoot, the inbound rules were reviewed and updated to include the necessary ports rather than relying solely on port 22. Additional rules were added to permit required traffic, after which connectivity and the update/upgrade commands ran successfully, allowing the servers to install the latest packages and security patches.
    
 
 ## Conclusion
