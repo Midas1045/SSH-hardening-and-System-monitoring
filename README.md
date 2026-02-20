@@ -5,14 +5,14 @@ This documentation details the hardening of Ubuntu-based EC2 web servers through
 
 
 ## Table Of Contents
-1. Introduction
-2. Prerequisites and Services Used
-3. AWS VPC Configuration
-4. Azure Virtual Machine Configuration
-5. SSH Hardening
-6. Datadog Installation and Configuration
-7. Errors and Troubleshooting
-8. Conclusion
+1. [Introduction](#introduction)
+2. [Prerequisites and Services Used](#prerequisites-and-services-used)
+3. [AWS VPC Configuration](#aws-vpc-configuration)
+4. [Azure Virtual Machine Configuration](#azure-virtual-machine-configuration)
+5. [SSH Hardening](#ssh-hardening)
+6. [Datadog Installation and Configuration](#datadog-installation-and-configuration)
+7. [Errors and Troubleshooting](#errors-and-troubleshooting)
+8. [Conclusion](#conclusion)
 
 
 
@@ -72,8 +72,14 @@ This stage shows how Datadog monitoring was set up to enable real-time tracking 
 
 * Return to the Datadog website and navigate to the Infrastructure Dashboard to observe real-time monitoring of logs, system performance, and other key metrics. If additional         servers are available, navigate to the View Host List tab to view them.
 
+<p align="center"> <img width="1352" height="266" alt="Screenshot 2026-02-20 162724" src="https://github.com/user-attachments/assets/1adab709-461a-4762-84b4-e7c44a23bbc7" />
+
+You can watch the video here [Datadog System Monitoring](https://youtu.be/RUPv7jKEkZg)
 
 ## Errors and Troubleshooting
+
+
+
 
 ## Conclusion
 This project demonstrates the successful implementation of SSH hardening and system monitoring on cloud-based Ubuntu servers. Updating the default SSH port enhances access security by reducing exposure to automated attacks, while the integration of monitoring tools enables real-time visibility into system performance, logs, and overall server health. Together, these measures confirm secure remote connectivity, improved operational awareness, and a stronger foundation for maintaining reliable and resilient cloud infrastructure.
